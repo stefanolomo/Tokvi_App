@@ -1,3 +1,4 @@
+//* Declaracion de variables
 const menuEmail = document.querySelector('.navbar-email');
 const desktopMenu = document.querySelector('.desktop-menu');
 const menuHamIcon = document.querySelector('.menu');
@@ -8,13 +9,14 @@ const shoppingCartContainer = document.querySelector('#shoppingCartContainer');
 const productDetailContainer = document.querySelector('#productDetail');
 const cardsContainer = document.querySelector('.cards-container');
 
-
+//* Escuchadores de eventos
 menuEmail.addEventListener('click', toggleDesktopMenu);
 menuHamIcon.addEventListener('click', togglemobileMenu);
 menuCarritoIcon.addEventListener('click', togglecarritoAside);
 productDetailCloseIcon.addEventListener('click', closeProductDetailAside);
 
 
+//* Funciones
 function toggleDesktopMenu() {
 
     const isAsideClosed = shoppingCartContainer.classList.contains('inactive');
@@ -25,7 +27,6 @@ function toggleDesktopMenu() {
 
     desktopMenu.classList.toggle('inactive');
 }
-
 
 function togglemobileMenu() {
     const isAsideClosed = shoppingCartContainer.classList.contains('inactive');
@@ -63,6 +64,7 @@ function closeProductDetailAside() {
 
 }
 
+//* Creacion de elementos para depues mandarlos al DOM
 const productList = [];
 
 productList.push({
@@ -97,6 +99,7 @@ productList.push({
                 
             </div>  */
 
+//* Funciones para agregar los elementos al DOM
 for ( product of productList) {
     const productCard = document.createElement('div');
     productCard.classList.add('product-card');
