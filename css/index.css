@@ -2,9 +2,16 @@
 @import url(variables.css);
 @import url(fuentes.css);
 /* #General */
-.inactive,
 .hidden {
-  display: none;
+  display: none !important;
+}
+a.not-a {
+  text-decoration: none;
+  color: inherit;
+}
+a.not-a:visited {
+  text-decoration: none;
+  color: inherit;
 }
 /* Barra de Navegación */
 header nav {
@@ -25,11 +32,12 @@ header nav .btn {
   padding: var(--l) var(--xl) var(--l) var(--xl);
   margin: var(--l);
   border: 1px solid transparent;
+  transition: color 320ms;
 }
 header nav .btn:hover {
-  color: var(--hospital-green);
-  border: 1px solid var(--hospital-green);
   border-radius: var(--xl);
+  color: var(--hospital-green);
+  border: 1px solid transparent;
 }
 header nav .title {
   font-family: Quicksand;
@@ -57,13 +65,66 @@ header nav .left-container {
   gap: var(--xl);
 }
 @media (min-width: 730px) {
+  header nav div.dropdown {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: unset;
+    flex-wrap: unset;
+    gap: var(--xl);
+    font-family: Quicksand;
+    min-width: 150px;
+    position: absolute;
+    background-color: white;
+    top: 60px;
+    right: 45px;
+    border: 1px solid;
+    padding: var(--xxl) var(--xxxl) var(--xxl) var(--xxl);
+    border-radius: var(--xl);
+  }
+  header nav div.dropdown hr {
+    display: block;
+    width: 100%;
+  }
+  header nav div.dropdown .exit {
+    color: var(--hospital-green);
+  }
   header nav .menu {
     display: none;
   }
 }
 @media (max-width: 729px) {
-  header nav .btn {
+  header nav .btn,
+  header nav div.dropdown {
     display: none;
   }
 }
-/* Menu en Desktop */
+main {
+  margin-top: var(--xxxl);
+}
+main .card-container .card {
+  display: flex;
+  flex-direction: column;
+  align-items: unset;
+  justify-content: unset;
+  flex-wrap: unset;
+  gap: var(--l);
+  padding: var(--xxxl);
+  margin: var(--xl);
+  border-radius: var(--l);
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1), 0 -1px 2px 0 rgba(0, 0, 0, 0.1);
+  max-width: 320px;
+}
+main .card-container .card img {
+  border-radius: var(--xxl);
+  width: 100%;
+  object-fit: cover;
+}
+main .card-container .card .bottom-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: unset;
+  gap: unset;
+}

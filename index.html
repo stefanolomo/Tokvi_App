@@ -22,96 +22,34 @@
 				<button class="btn">Sobre nosotros</button>
 			</div>
 			<div class="right-container">
-				<button class="btn billetera">Conectar billetera</button>
+				<button id="billetera-btn" class="btn billetera">Conectar billetera</button>
+				<div class="dropdown hidden">
+					<a href="" class="not-a"><h3>Portafolio</h3></a>
+					<a href="" class="not-a"></a><h4>Mi cuenta</h4></a>
+					<hr>
+					<a href="" class="not-a exit">Salir</a>
+				</div>
 				<img src="./img/icons/icon_shopping_cart.svg" alt="Carrito de compras" class="icon">
 			</div>
 		</nav>
 	</header>
-	<aside id="shoppingCartContainer"
-		class="inactive">
-		<div class="title-container">
-			<img src="/icons/flechita.svg"
-				alt="arrow">
-			<p class="tilte">Mi compra</p>
-		</div>
-
-		<div class="my-order-content">
-
-			<div class="shopping-cart">
-				<figure>
-					<img src="https://img.freepik.com/psd-gratis/plantilla-banner-web-o-publicacion-instagram-redes-sociales-bienes-raices_501970-147.jpg?w=740&t=st=1672294535~exp=1672295135~hmac=1c143f6c77d2c4ec11996d3546358d0479c44a72ee6cfd0da5b6d47fe942c8d8"
-						alt="Banner inmobiliario">
-				</figure>
-				<p>Dream House</p>
-				<p>$30,000.00</p>
-				<img src="/icons/icon_close.png"
-					alt="close icon">
+	<main>
+		<section class="card-container">
+			<div class="card">
+				<img src="https://img.freepik.com/psd-gratis/plantilla-banner-web-o-publicacion-instagram-redes-sociales-bienes-raices_501970-147.jpg?w=740&t=st=1672294535~exp=1672295135~hmac=1c143f6c77d2c4ec11996d3546358d0479c44a72ee6cfd0da5b6d47fe942c8d8" alt="Casa x">
+				<div class="bottom-container">
+					<div class="left-container">
+						<b class="price">$ 1.000.000</b>
+						<h4>The house of your dreams</h4>
+					</div>
+					<div class="rigth-container">
+						<img src="./img/icons/bt_add_to_cart.svg" alt="Add this product to your cart">
+					</div>
+					<p class="description hidden">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur quasi ducimus, sit ex pariatur omnis blanditiis deleniti ipsa officia perferendis.</p>
+				</div>
 			</div>
-			<div class="shopping-cart">
-				<figure>
-					<img src="https://img.freepik.com/psd-gratis/plantilla-banner-web-o-publicacion-instagram-redes-sociales-bienes-raices_501970-148.jpg?w=740&t=st=1672294506~exp=1672295106~hmac=9c7470dc4ec0d01f581283b622ee1bfce63c77bf1026f75eee04b1af161440fe"
-						alt="Banner inmobiliario">
-				</figure>
-				<p>Casa Campestre</p>
-				<p>$30,000.00</p>
-				<img src="/icons/icon_close.png"
-					alt="close icon">
-			</div>
-			<div class="shopping-cart">
-				<figure>
-					<img src="https://img.freepik.com/psd-gratis/publicacion-instagram-propiedad-inmobiliaria-o-plantilla-banner-redes-sociales_106176-646.jpg?w=740&t=st=1672294032~exp=1672294632~hmac=83b59255bcbf97e470e89a5c5d928cf072148044ae52a7b1a1d3cd0d237a401e"
-						alt="Banner inmobiliario">
-				</figure>
-				<p>Bike Bomber</p>
-				<p>$2,300.00</p>
-				<img src="/icons/icon_close.png"
-					alt="close icon">
-			</div>
-
-
-			<div class="order">
-				<p>
-					<span>Total</span>
-				</p>
-				<p>$62,300.00</p>
-			</div>
-		</div>
-		<button class="primary-button">
-			Checkout
-		</button>
-	</aside>
-
-	<aside id="productDetail"
-		class="inactive">
-		<div class="product-detail-close">
-			<img src="/icons/icon_close.png"
-				alt="icono close">
-		</div>
-
-		<img src="https://i.pinimg.com/originals/f8/a6/1d/f8a61d57ab554146acec80cf330f62ad.jpg"
-			alt="planos de apartamento">
-		<div class="product-info">
-			<p>$35,000.00</p>
-			<p>Proyecto inmobiliario</p>
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur pariatur aliquam corrupti quo ipsum,
-				expedita beatae hic incidunt quidem adipisci et perferendis nisi explicabo. Nobis accusamus adipisci
-				quos itaque culpa.</p>
-
-			<button class="primary-button add-to-cart-button">
-				<img src="/icons/bt_add_to_cart.svg"
-					alt="add to cart">
-				Comprar Propiedad
-			</button>
-
-		</div>
-	</aside>
-
-	<section class="main-container">
-		<div class="cards-container">
-		</div>
-
-	</section>
-
+		</section>
+	</main>
 	<script src="/js/main.js"></script>
 </body>
 
